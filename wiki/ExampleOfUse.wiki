@@ -25,9 +25,9 @@ The results of the ping command are returned
 = Using the Ping Results =
 {{{
 //statistics
-System.out.println(results.ttl);
-System.out.println(results.rtt_min);
-System.out.println(results.received);
+System.out.println(results.ttl());
+System.out.println(results.rtt_min());
+System.out.println(results.received());
 
 //individual requests
 List<PingRequest> requests = results.getRequests();
@@ -41,7 +41,5 @@ System.out.println(p.fromIP());
 
 
 }}}
-
-
 
 
